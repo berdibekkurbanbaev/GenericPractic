@@ -6,19 +6,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        List<GenericNum> list = new ArrayList<>();
-        list.add(new GenericNum(1));
-        list.add(new GenericNum(4));
-        list.add(new GenericNum(9));
-        list.add(new GenericNum(7));
-        list.add(new GenericNum(4));
-        list.add(new GenericNum(10));
-    }
-    public static void method(List<Integer>list){
-        for (int i = 0; i < list.size(); i++) {
-            if (list.size())
-
-        }
+        Integer[] array = {1,3,5,5,7,9,2,3,4,6};
+        GenericNum<Integer,String>genericNum = new GenericNum<>(3,"hello");
+        System.out.println(genericNum);
+        System.out.println(genericNum.maxMethod(array));
 
     }
 }
